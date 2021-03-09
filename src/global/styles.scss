@@ -1,0 +1,140 @@
+
+
+#components-layout-demo-fixed-sider .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.ant-layout.site-layout {
+    min-height: 100vh !important;
+}
+
+.movie-card:hover {
+    transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.6s;
+
+    img {
+        transition: all cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.6s;
+        transform: scale(1.1);
+    }
+
+    .ant-card-cover {
+        overflow: hidden;
+    }
+}
+
+.card-btn {
+    &:hover {
+        background-color: #1890ff;
+        border-color: #1890ff;
+        color: white;
+        transition: all ease 0.5s;
+    }
+}
+.actors-title{
+        color: #1890ff;
+        font-weight: bold;
+        font-size: 2rem;
+}
+.movie-holder {
+    display: flex;
+    width: 100%;
+
+    .movie-title {
+        color: #1890ff;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content {
+    padding-top: 5rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+
+    p,
+    h3,
+    h2,
+    h4 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.ant-spin-spinning {
+    position: absolute !important;
+    display: inline-block !important;
+    opacity: 1 !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+.slick-arrow{
+    display: none !important;
+    position: absolute;
+    top: -60px;
+    z-index: 1;
+    width: 90px;
+    height: 35px;
+    text-align: left;
+    background: #1890ff;
+    border: none;
+    transition: all ease 0.5s;
+    color: white;
+    outline: none;
+    &:hover{
+        opacity: 0.8;
+    }
+    margin: auto;
+    // right: 0;
+    &.slick-next{
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        right: 0;
+    }
+    &.slick-prev{
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        text-align: right;
+        left: 0;
+    }
+} 
+.related-item{
+    .card-btn{
+        color:rgb(22, 22, 22);
+        line-height: 2;
+        padding: 0 10px;
+        &:hover {
+            // background-color: #1890ff;
+            border-color: #1890ff;
+            transition: all ease 0.5s;
+            color: white !important;
+        }
+    }
+    .vote-avarage{
+        display: block;
+        color: red;
+        span{
+            color: black;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    }
+    .related-info-holder{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+    }
+}
+
+.single-movie-data{
+    margin-bottom: 40px;
+}
+.actor-btn{
+font-size: 1.2rem;
+float: right;
+text-decoration: underline;
+}
